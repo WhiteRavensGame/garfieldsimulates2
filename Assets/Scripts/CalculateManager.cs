@@ -183,7 +183,7 @@ public class CalculateManager : MonoBehaviour {
 			//Process damaging of Minion
 
 			//Damage  is defined twice in this file
-			float damage = ((tapPerSecond * garfieldPower) + ally1Power + ally2Power + ally3Power + ally4Power + ally5Power + ally6Power + ally7Power + ally8Power  + ally9Power  + ally10Power  + ally11Power  + ally12Power  + ally13Power  + ally14Power  + ally15Power  + ally16Power  + ally17Power  + ally18Power  + ally19Power  + ally20Power) * 1f;
+			float damage = ((tapPerSecond * garfieldPower) + ally1Power + ally2Power + ally3Power + ally4Power + ally5Power + ally6Power + ally7Power + ally8Power  + ally9Power  + ally10Power  + ally11Power  + ally12Power  + ally13Power  + ally14Power  + ally15Power  + ally16Power  + ally17Power  + ally18Power  + ally19Power  + ally20Power) * 2f;
 			currMinionHP -= damage;
 			//print((tapPerSecond * garfieldPower) + "," + ally1Power + "," + ally2Power + "," + ally3Power + ", HP LEFT: " + currMinionHP);
 			if(currMinionHP <= 0 && isMinion)
@@ -343,7 +343,7 @@ public class CalculateManager : MonoBehaviour {
 	}
 	private void SpawnNewBoss()
 	{
-		float damage = ((tapPerSecond * garfieldPower) + ally1Power + ally2Power + ally3Power + ally4Power + ally5Power + ally6Power + ally7Power + ally8Power  + ally9Power  + ally10Power  + ally11Power  + ally12Power  + ally13Power  + ally14Power  + ally15Power  + ally16Power  + ally17Power  + ally18Power  + ally19Power  + ally20Power) * 1f;
+		float damage = ((tapPerSecond * garfieldPower) + ally1Power + ally2Power + ally3Power + ally4Power + ally5Power + ally6Power + ally7Power + ally8Power  + ally9Power  + ally10Power  + ally11Power  + ally12Power  + ally13Power  + ally14Power  + ally15Power  + ally16Power  + ally17Power  + ally18Power  + ally19Power  + ally20Power) * 2f;
 
 		StageStatsRow currStage = StageStats.Instance.GetRow("ID_"+(stageLevel-1));
 		currMinionHP = currStage._BossHP;
